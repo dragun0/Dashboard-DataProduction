@@ -72,7 +72,7 @@ Processed outputs are saved as:
 Create a virtual environment and install the dependencies:
 
 ```bash
-conda create -n forecast_env python=3.10
+conda create -n forecast_env python
 conda activate forecast_env
 pip install -r requirements.txt
 ```
