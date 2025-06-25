@@ -20,7 +20,7 @@ This repository performs the fetching, preprocessing and processing of determini
 - **Google DeepMind GraphCast** (Machine Learning)
 - **ECMWF AIFS** (Machine Learning)
 
-...against the **ERA5 reanalysis** ground truth, to compute forecast error metrics (RMSE, MAE, MBE, R), and convert the results into:
+... against the **ERA5 reanalysis** ground truth, to compute forecast error metrics (RMSE, MAE, MBE, R), and convert the results into:
 
 - Multi-scale Zarr pyramids for interactive maps  
 - Region-aggregated JSON files for time series (graphs) visualisations
@@ -35,7 +35,7 @@ Modular Jupyter Notebooks for each stage of the data production pipeline:
 
 | Notebook | Function |
 |----------|----------|
-| `GraphCast_WeatherForecasting/GraphCast_Forecasting.ipynb` | Produce GraphCast forecasts using [remote-graphcast]([https://github.com/dragun0/GC-dashboard](https://github.com/dragun0/remote-graphcast-CDSapi-0.7.x)) and upload to S3 |
+| `GraphCast_WeatherForecasting/GraphCast_Forecasting.ipynb` | Produce GraphCast forecasts using [`remote-graphcast`](https://github.com/dragun0/remote-graphcast-CDSapi-0.7.x) and upload to S3 |
 | `DataFetch_Preprocessing_Processing/GraphCast_DataFetch.ipynb` | Download GraphCast prediction subsets from S3 |
 | `DataFetch_Preprocessing_Processing/MARS_CDS_DataFetch - Surface Variables.ipynb` | Download IFS-HRES, AIFS surface forecasts from MARS and ERA5 from CDS |
 | `DataFetch_Preprocessing_Processing/MARS_CDS_DataFetch - Pressure Variables.ipynb` | Download pressure-level variables from MARS and CDS |
