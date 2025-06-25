@@ -1,0 +1,18 @@
+boto3==1.36.3
+cdsapi==0.7.5
+cfgrib==0.9.15.0
+ecmwf_api_client==1.6.3
+geopandas==1.0.1
+ndpyramid==0.4.0
+netCDF4==1.6.2
+netCDF4==1.7.2
+numcodecs==0.14.1
+numpy==2.3.1
+pandas==2.3.0
+rioxarray==0.18.1
+scipy==1.16.0
+Shapely==2.1.1
+xarray==2024.11.0
+
+# install remote_graphcast from GitHub
+git+https://github.com/dragun0/remote-graphcast-CDSapi-0.7.x.git
