@@ -8,7 +8,7 @@ Author: Leonie Dragun (10776334)
 
 The code in this repository processes raw weather forecast and reanalysis data into verification datasets used in the forecast evaluation dashboard:  
 🔗 [GC-dashboard (App Repo)](https://github.com/dragun0/GC-dashboard)  
-🌐 [Live Dashboard](https://gc-dashboard-red.vercel.app/)
+🌐 [Live Dashboard (Deployed App)](https://gc-dashboard-red.vercel.app/)
 
 ---
 
@@ -35,7 +35,7 @@ Modular Jupyter Notebooks for each stage of the data production pipeline:
 
 | Notebook | Function |
 |----------|----------|
-| `GraphCast_WeatherForecasting/GraphCast_Forecasting.ipynb` | Produce GraphCast forecasts using [`remote-graphcast`]([https://github.com/dragun0/GC-dashboard](https://github.com/dragun0/remote-graphcast-CDSapi-0.7.x)) and upload to S3 |
+| `GraphCast_WeatherForecasting/GraphCast_Forecasting.ipynb` | Produce GraphCast forecasts using [remote-graphcast]([https://github.com/dragun0/GC-dashboard](https://github.com/dragun0/remote-graphcast-CDSapi-0.7.x)) and upload to S3 |
 | `DataFetch_Preprocessing_Processing/GraphCast_DataFetch.ipynb` | Download GraphCast prediction subsets from S3 |
 | `DataFetch_Preprocessing_Processing/MARS_CDS_DataFetch - Surface Variables.ipynb` | Download IFS-HRES, AIFS surface forecasts from MARS and ERA5 from CDS |
 | `DataFetch_Preprocessing_Processing/MARS_CDS_DataFetch - Pressure Variables.ipynb` | Download pressure-level variables from MARS and CDS |
@@ -67,7 +67,7 @@ Processed outputs are saved as:
 
 ---
 
-## 📚 Requirements
+## Requirements
 
 Create a virtual environment and install the dependencies:
 
@@ -75,10 +75,11 @@ Create a virtual environment and install the dependencies:
 conda create -n forecast_env python=3.10
 conda activate forecast_env
 pip install -r requirements.txt
+```
 
 ---
 
-## 🚀 Usage
+## Usage
 
 1. Generate GraphCast predictions 
 2. Download IFS-HRES and AIFS forecasts and ERA5
@@ -88,9 +89,9 @@ pip install -r requirements.txt
 
 ---
 
-## 🧭 Related Projects
+## Related Projects
 
-- 📊 [GC-dashboard (Interactive Forecast Visualisation)](https://github.com/dragun0/GC-dashboard)
+- 📊 [GC-dashboard](https://github.com/dragun0/GC-dashboard)
 - 🌐 [Live Dashboard Deployment](https://gc-dashboard-red.vercel.app/)
 
 ---
